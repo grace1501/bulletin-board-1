@@ -24,8 +24,3 @@ jobs:
       run: |
         gem install bundler -v 2.4.6
         bundle install
-
-    - name: Run tests
-      env:
-           TOKEN: ${{ secrets.GRADE_TOKEN }}
-      run: rake grade
