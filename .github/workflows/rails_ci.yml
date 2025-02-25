@@ -26,4 +26,6 @@ jobs:
         bundle install
 
     - name: Run tests
+      env:
+           TOKEN: ${{ GMse25pcABtAUuYJP4efnuNg }}
       run: rake grade
