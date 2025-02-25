@@ -18,11 +18,11 @@ jobs:
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: '3.3'
+        ruby-version: '3.2'
 
     - name: Install dependencies
       run: |
-        gem install bundler
+        gem install bundler -v 2.4.6
         bundle install
 
     - name: Run tests
